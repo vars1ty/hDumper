@@ -1,0 +1,22 @@
+[package]
+name = "h_dumper"
+authors = [ "nptr", "varsity" ]
+version = "0.1.7"
+edition = "2021"
+description = "Public Citizen Record Scanner"
+
+[dependencies]
+tokio = { version = "*", features = ["full"] }
+reqwest = { version = "*", features = ["json"] }
+tabled = "*"
+colorful = "*"
+lazy_static = "*"
+futures = "*"
+json = "*"
+
+# Optimizes for size
+[profile.release]
+opt-level = "z"
+panic = "abort"
+strip = true
+lto = true
