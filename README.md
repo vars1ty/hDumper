@@ -19,7 +19,9 @@ There are (so far) no proper arguments present in hDumper, so you'll have to rel
 - `AREA` | In what approximate area do you want to find records within? Note that this only **attempts** to narrow your search down, it may not succeed 100% of the time.
 
 ### Example
+```sh
 SEARCH="Jonathan" END_PAGE=5 AREA="" ./hDumper
+```
 
 ## Sources
 hDumper utilizes 2 sources and their undocumented APIs to grab and display data.
